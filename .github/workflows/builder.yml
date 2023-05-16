@@ -20,23 +20,18 @@ jobs:
           - generic-x86-64
           - intel-nuc
           - khadas-vim3
+          - jethub-h1
+          - jethub-h2
+          - jethub-d1
+          - jethub-d1p
           - odroid-c2
           - odroid-c4
           - odroid-m1
           - odroid-n2
-          - odroid-xu
           - qemuarm
           - qemuarm-64
           - qemux86
           - qemux86-64
-          - raspberrypi
-          - raspberrypi2
-          - raspberrypi3
-          - raspberrypi3-64
-          - raspberrypi4
-          - raspberrypi4-64
-          - tinker
-          - yellow
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v3
