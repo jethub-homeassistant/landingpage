@@ -1,4 +1,4 @@
-image: ghcr.io/home-assistant/{machine}-homeassistant
+image: ghcr.io/jethub-homeassistant/{machine}-homeassistant
 build_from:
   aarch64: scratch
   armv7: scratch
@@ -6,11 +6,11 @@ build_from:
   amd64: scratch
   i386: scratch
 codenotary:
-  signer: notary@home-assistant.io
-  base_image: notary@home-assistant.io
+  signer: vb@jethome.ru
+  base_image: vb@jethome.ru
 cosign:
-  base_identity: https://github.com/home-assistant/docker-base/.*
-  identity: https://github.com/home-assistant/landingpage/.*
+  base_identity: https://github.com/jethub-homeassistant/docker-base/.*
+  identity: https://github.com/jethub-homeassistant/landingpage/.*
 labels:
   io.hass.type: landingpage
-  org.opencontainers.image.source: https://github.com/home-assistant/landingpage
+  org.opencontainers.image.source: https://github.com/jethub-homeassistant/landingpage
