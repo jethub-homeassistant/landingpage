@@ -20,6 +20,11 @@ jobs:
           - generic-x86-64
           - intel-nuc
           - khadas-vim3
+          - jethub-h1
+          - jethub-h2
+          - jethub-d1
+          - jethub-d1p
+          - jethub-d2
           - odroid-c2
           - odroid-c4
           - odroid-m1
@@ -36,9 +41,6 @@ jobs:
           - raspberrypi4
           - raspberrypi4-64
           - raspberrypi5-64
-          - tinker
-          - yellow
-          - green
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v4
@@ -56,7 +58,7 @@ jobs:
       run: echo "BUILD_ARGS=--test" >> $GITHUB_ENV
 
     - name: Build landingpage
-      uses: home-assistant/builder@2024.03.5
+      uses: jethub-homeassistant/builder@2024.03.5
       with:
         args: |
           $BUILD_ARGS \
